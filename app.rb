@@ -14,7 +14,12 @@ class App < Sinatra::Base
   post '/checkout' do
     # Add to session hash
     # binding.pry
+<<<<<<< HEAD
     session[:item] = params[:item]
+=======
+    @item = params[:item]
+    sessions[:item] = @item
+>>>>>>> 2d7d2c8d5137a7a788702c65d71a9e6982f26b50
     
     erb :checkout
   end
